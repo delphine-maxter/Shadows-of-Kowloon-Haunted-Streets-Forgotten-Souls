@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shadows of Kowloon – Haunted Streets & Forgotten Souls</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" rel="stylesheet" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Shadows of Kowloon – Haunted Streets & Forgotten Souls</h1>
+    <img src="images/header.jpg" alt="Spooky Kowloon banner" class="header-banner"/>
+    <div class="summary">
+      <p><strong>Total Distance:</strong> ~4.2 km &nbsp; | &nbsp; <strong>Walking Time:</strong> ~55 mins &nbsp; | &nbsp; <strong>Full Experience:</strong> ~2.5 hrs</p>
+      <p>This night route threads through Yau Ma Tei and Sham Shui Po—layering documented history with local legends and imaginative storytelling. Images are header-style for immersive mood; body text stays clean and readable.</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- St Andrew's Church -->
+    <section class="stop" id="st-andrews">
+      <h2>St Andrew’s Church</h2>
+      <img src="images/st-andrews.jpg" alt="St Andrew’s Church banner" class="stop-banner" />
+      <p><strong>Historical Facts:</strong> Founded in 1904 and consecrated in 1906, St Andrew’s is a Victorian Gothic brick church designed by Leigh &amp; Orange. It is listed as a Grade I historic building and, during the Second World War, was converted into a Shinto shrine under Japanese occupation before being restored.</p>
+      <p><strong>Legend (Popular Tale):</strong> Parishioners have long whispered about faint organ notes after midnight and a chill in the nave when no one is present.</p>
+      <p><strong>Storytelling (Invented Narrative):</strong> “The red bricks drink in the city’s hum, but when the park grows quiet a thin hymn rises—no hands on the keys, only memory.”</p>
+      <p class="label"><strong>Next Segment:</strong> ~0.66 km (~8 mins)</p>
+    </section>
+
+    <!-- Temple Street Night Market -->
+    <section class="stop" id="temple-street">
+      <h2>Temple Street Night Market</h2>
+      <img src="images/temple-street.jpg" alt="Temple Street banner" class="stop-banner" />
+      <p><strong>Historical Facts:</strong> Named for the nearby Tin Hau Temple, Temple Street has evolved into Hong Kong’s most storied night market—a neon-lit corridor known for street food and fortune tellers, active nightly with the best atmosphere after sunset.</p>
+      <p><strong>Legend (Popular Tale):</strong> Fortune tellers say some clients leave no shadow beneath the lamps—an omen that the reading is for more than one life.</p>
+      <p><strong>Storytelling (Invented Narrative):</strong> “Under paper lanterns, garlic smoke wraps the chess boards. A singer’s voice trembles; the crowd sways, but one listener never blinks.”</p>
+      <p class="label"><strong>Next Segment:</strong> ~0.26 km (~3 mins)</p>
+    </section>
+
+    <!-- Tin Hau Temple -->
+    <section class="stop" id="tin-hau">
+      <h2>Tin Hau Temple (Yau Ma Tei)</h2>
+      <img src="images/tin-hau.jpg" alt="Tin Hau Temple banner" class="stop-banner" />
+      <p><strong>Historical Facts:</strong> The temple complex—among Kowloon’s largest—dates to the mid-19th century and includes halls once used for worship, arbitration and free schooling for boat and land people. Declared a monument, it anchors community life around Yung Shue Tau.</p>
+      <p><strong>Legend (Popular Tale):</strong> Sailors lost to storms are said to follow incense trails back to Tin Hau’s altar on certain nights.</p>
+      <p><strong>Storytelling (Invented Narrative):</strong> “Incense curls like tide-mist; a bell stirs, and the banyans bow as if to welcome arrivals from far off water.”</p>
+      <p class="label"><strong>Next Segment:</strong> ~0.32 km (~4 mins)</p>
+    </section>
+
+    <!-- Yau Ma Tei Theatre -->
+    <section class="stop" id="ymt-theatre">
+      <h2>Yau Ma Tei Theatre</h2>
+      <img src="images/ymt-theatre.jpg" alt="Yau Ma Tei Theatre banner" class="stop-banner" />
+      <p><strong>Historical Facts:</strong> Built in 1930 and revived in 2012 as a Cantonese opera venue, this is Kowloon’s only surviving pre–World War II theatre. Its Art Deco façade and timber roof trusses frame a rare link between cinema and opera heritage.</p>
+      <p><strong>Legend (Popular Tale):</strong> Performers speak of phantom applause and a final cue light that flickers when the house is empty.</p>
+      <p><strong>Storytelling (Invented Narrative):</strong> “A single clap cracks the silence; dust motes rise, bowing where audiences once sat.”</p>
+      <p class="label"><strong>Next Segment:</strong> ~0.83 km (~11 mins)</p>
+    </section>
+
+    <!-- Shanghai Street (Tong Lau) -->
+    <section class="stop" id="shanghai-st">
+      <h2>Shanghai Street (Tong Lau Row)</h2>
+      <img src="images/shanghai-st.jpg" alt="Shanghai Street banner" class="stop-banner" />
+      <p><strong>Historical Facts:</strong> The pre-war shophouses (tong lau) at Nos. 600–626 are Grade I historic buildings. Tong lau typify Hong Kong’s urban past: shopfronts at street level, living quarters above, verandahs over arcades—evolving from 19th-century forms to Art Deco-influenced blocks by the 1930s.</p>
+      <p><strong>Legend (Popular Tale):</strong> Residents say the corner balconies hold echoes of lullabies from families who slept above their shops.</p>
+      <p><strong>Storytelling (Invented Narrative):</strong> “Balustrades peel; a radio hum wakes on its own; behind a shutter, an old ledger turns a page.”</p>
+      <p class="label"><strong>Next Segment:</strong> ~1.67 km (~22 mins)</p>
+    </section>
+
+    <!-- Mei Ho House -->
+    <section class="stop" id="mei-ho">
+      <h2>Mei Ho House</h2>
+      <img src="images/mei-ho-house.jpg" alt="Mei Ho House banner" class="stop-banner" />
+      <p><strong>Historical Facts:</strong> The last surviving H-block of the Shek Kip Mei resettlement estate, Mei Ho House was completed in 1954 after the devastating Christmas Day 1953 fire displaced over 53,000 residents. Today it operates as a youth hostel and museum interpreting early public housing life.</p>
+      <p><strong>Legend (Popular Tale):</strong> Neighbours recall footsteps pacing the open corridors long after curfew—soft as ash, steady as routine.</p>
+      <p><strong>Storytelling (Invented Narrative):</strong> “Kerosene memories flicker; enamel bowls clink; a key turns, searching for a door that moved decades ago.”</p>
+      <p class="label"><strong>Next Segment:</strong> ~0.42 km (~5 mins)</p>
+    </section>
+
+    <!-- Man Fat Seafood Restaurant -->
+    <section class="stop" id="man-fat">
+      <h2>Man Fat Seafood Restaurant</h2>
+      <img src="images/man-fat.jpg" alt="Man Fat Seafood banner" class="stop-banner" />
+      <p><strong>Historical Facts:</strong> A longstanding Sham Shui Po seafood spot on Fuk Wa Street, Man Fat embodies old-school Cantonese banqueting culture—live seafood, family-style dishes, and late-night gatherings. Local lore places its roots in the 1970s with a dai pai dong spirit carried into a sit-down restaurant.</p>
+      <p><strong>Cultural Note (Sham Shui Po):</strong> One of Hong Kong’s oldest working-class districts, Sham Shui Po is renowned for gritty street markets, fabric and electronics arcades, and an authentic food scene that ranges from hawker classics to Michelin-recognised eateries.</p>
+      <p><strong>Legend (Popular Tale):</strong> During the Hungry Ghost Festival, some say extra bowls should be set at midnight banquets—just in case.</p>
+      <p><strong>Storytelling (Invented Narrative):</strong> “Steam blooms from claypot rice; a chair scrapes back on its own; the last toast is answered by a whisper.”</p>
+      <p class="label"><strong>End of Route.</strong></p>
+    </section>
+
+    <div id="map"></div>
+  </main>
+
+  <footer>
+    <p>Map data © OpenStreetMap contributors. Route pop-ups summarise historical notes and legends. Images are placeholders—replace with your own photos for full effect.</p>
+    <p><a href="https://www.google.com/maps/dir/St+Andrew's+Church,+Hong+Kong/Temple+Street+Night+Market,+Hong+Kong/Tin+Hau+Temple,+Yau+Ma+Tei,+Hong+Kong/Yau+Ma+Tei+Theatre,+Hong+Kong/Shanghai+Street,+Hong+Kong/Mei+Ho+House,+Hong+Kong/Man+Fat+Seafood+Restaurant,+Hong+Kong/" target="_blank">Open full route in Google Maps</a></p>
+  </footer>
+
+  <script>
+    var map = L.map('map').setView([22.310, 114.170], 14);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '&copy; OpenStreetMap contributors' }).addTo(map);
+
+    var stops = [
+      {name:"St Andrew’s Church", coords:[22.3019,114.1724], popup:`<b>St Andrew’s Church</b><br>1904–1906 Gothic Revival; Grade I.<br><em>Legend:</em> faint organ notes at night.`},
+      {name:"Temple Street Night Market", coords:[22.3076,114.1707], popup:`<b>Temple Street</b><br>Night market famed for street food & fortune tellers.<br><em>Legend:</em> clients with no shadow.`},
+      {name:"Tin Hau Temple (Yau Ma Tei)", coords:[22.30991,114.170684], popup:`<b>Tin Hau Temple</b><br>Mid-19th century complex; community hub.<br><em>Legend:</em> sailors follow incense home.`},
+      {name:"Yau Ma Tei Theatre", coords:[22.312436,114.169187], popup:`<b>YMT Theatre</b><br>1930; revived 2012; Cantonese opera venue.<br><em>Legend:</em> phantom applause.`},
+      {name:"Shanghai Street (Nos. 600–626)", coords:[22.3198,114.1679], popup:`<b>Shanghai Street tong lau</b><br>Grade I shophouses; pre-war arcades.<br><em>Legend:</em> balcony lullabies.`},
+      {name:"Mei Ho House", coords:[22.334,114.1625], popup:`<b>Mei Ho House</b><br>1954 H-block after 1953 fire; hostel & museum.<br><em>Legend:</em> corridor footsteps.`},
+      {name:"Man Fat Seafood Restaurant", coords:[22.3302,114.1628], popup:`<b>Man Fat Seafood</b><br>Old-school banquets on Fuk Wa St.<br><em>Legend:</em> set extra bowls at midnight.`},
+    ];
+
+    stops.forEach(function(s){
+      L.marker(s.coords).addTo(map).bindPopup(s.popup);
+    });
+  </script>
+</body>
+</html>
